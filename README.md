@@ -4,10 +4,12 @@
 
 ## Data_structure
 
+- [big-O 표기법](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/big-O.md)
+
 ---
 
 ## Javascript
 
-[1. 호이스팅](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/hoisting.md)
+- [호이스팅](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/hoisting.md)
 
 ---
