@@ -6,7 +6,7 @@
 
 - [big-O 표기법](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/big-O.md)
 
-- [array](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/array.md)
+- [Array](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/array.md)
 
 ---
 
