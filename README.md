@@ -6,6 +6,8 @@
 
 - [big-O 표기법](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/big-O.md)
 
+- [array](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/array.md)
+
 ---
 
 ## Javascript
@@ -15,4 +17,6 @@
 - [실행컨텍스트](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/Execution%20context.md)
 
 - [스코프](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/scope.md)
+
+- [리액트 기초](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/react_basic.md)
 ---
