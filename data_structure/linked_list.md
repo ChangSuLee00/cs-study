@@ -124,3 +124,5 @@ def search(self, target):
     return None
     # 찾지 못한다면 Node 리턴
 ```
+
+node의 link를 타고 처음부터 끝까지 탐색한다.
