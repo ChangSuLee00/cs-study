@@ -1,3 +1,5 @@
+저작권 관련 업로드가 허락된 자료입니다.
+
 # GIT
 
 > VCS(version control system)의 하나이다.
