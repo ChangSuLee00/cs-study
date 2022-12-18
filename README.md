@@ -8,6 +8,8 @@
 
 - [Array](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/array.md)
 
+- [Linked list](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/linked_list.md)
+
 ---
 
 ## Javascript
