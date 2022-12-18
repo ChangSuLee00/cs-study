@@ -21,4 +21,11 @@
 - [스코프](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/scope.md)
 
 - [리액트 기초](https://github.com/ChangSuLee00/CS-study/blob/main/javascript/react_basic.md)
+
+---
+
+## ETC
+
+- [Git](https://github.com/ChangSuLee00/CS-study/blob/main/etc/git.md)
+
 ---
