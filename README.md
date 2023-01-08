@@ -24,6 +24,11 @@
 
 ---
 
+## Network
+
+- [OSI 7계층](https://github.com/ChangSuLee00/CS-study/blob/main/network/OSI7_Layer.md)
+
+---
 ## ETC
 
 - [Git](https://github.com/ChangSuLee00/CS-study/blob/main/etc/git.md)
