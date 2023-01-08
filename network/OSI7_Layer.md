@@ -14,8 +14,8 @@ OSI 7계층을 다음과 같이 구성되어 있다.
 ![OSI7](https://github.com/ChangSuLee00/CS-study/blob/main/pictures/OSI_7layer.png?raw=true)
 
 OSI 7계층은 다시 두 가지 계층으로 나눌 수 있다.  
-1~4계층: 데이터 플로 계층(Data Flow Layer) / 하위 계층(Lower Layer)  
-5~7계층: 애플리케이션 계층(Application Layer) / 상위 계층(Upper Layer)  
+1-4계층: 데이터 플로 계층(Data Flow Layer) / 하위 계층(Lower Layer)  
+5-7계층: 애플리케이션 계층(Application Layer) / 상위 계층(Upper Layer)  
 이러한 계층은 각각의 역할과 목표에 따라 구분된다.
 
 ### 1계층: 피지컬 계층(Physical Layer)
