@@ -30,16 +30,17 @@ class Queue:
     def __init__(self):
         self.front = None
         self.rear = None
+        self.temp = None
 
     # Enqueue
     def enqueue(self, val):
         new_node = Node(val)
 
         if not self.front:
-            self.front = new_node
+            self.front = self.rear = new_node
         else:
-            self.rear = new_node
-            self.front.next = self.rear
+            self.rear.next = new_node
+            self.rear = self.rear.next
 
     # Dequeue
     def dequeue(self):
