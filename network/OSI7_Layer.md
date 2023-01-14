@@ -13,7 +13,7 @@
 
 ## OSI 7계층의 도식
 
-OSI 7계층을 다음과 같이 구성되어 있다.
+OSI 7계층은 다음과 같이 구성되어 있다.
 
 ![OSI7](https://github.com/ChangSuLee00/CS-study/blob/main/pictures/OSI_7layer.png?raw=true)
 
