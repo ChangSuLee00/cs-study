@@ -12,6 +12,8 @@
 
 - [Stack](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/stack.md)
 
+- [Queue](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/queue.md)
+
 ---
 
 ## Javascript
