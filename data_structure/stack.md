@@ -52,5 +52,6 @@ class Stack:
 ## Stack의 연산 속도
 
 데이터 삽입(push): O(1)  
-데이터 삭제(pop): O(1)
-top 조회(top): O(1)
+데이터 삭제(pop): O(1)  
+top 조회(top): O(1)  
+top이외의 데이터 조회: O(n)
