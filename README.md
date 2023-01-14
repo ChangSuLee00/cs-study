@@ -10,6 +10,8 @@
 
 - [Linked list](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/linked_list.md)
 
+- [Stack](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/stack.md)
+
 ---
 
 ## Javascript
