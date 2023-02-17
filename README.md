@@ -33,6 +33,12 @@
 - [OSI 7계층](https://github.com/ChangSuLee00/CS-study/blob/main/network/OSI7_Layer.md)
 
 ---
+
+## Database
+
+- [데이터베이스의 원리와 응용 1~8](https://hardworking-everyday.tistory.com/category/Computer_Science/Database)
+
+---
 ## ETC
 
 - [Git](https://github.com/ChangSuLee00/CS-study/blob/main/etc/git.md)
