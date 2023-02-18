@@ -25,7 +25,8 @@ Query string = 웹 서버에 제공하는 추가 파라미터들도 & 기호로 
 ### API서버 요청의 경우
 
 SOP란 Same-Origin policy로 '동일한 출처에서만 리소스를 공유할 수 있다'는 정책이다.  
-예를 들자면 3000번 포트에서 돌아가는 리액트 서버에 접속할 때 React 서버에 있는 리소스는 자유롭게 가져올 수 있지만, 다른 출처 서버에 있는 5000번 포트의 Nest 서버의 리소스는 상호작용이 불가능하다.
+예를 들자면 3000번 포트에서 돌아가는 리액트 서버에 접속할 때 React 서버에 있는 리소스는 자유롭게 가져올 수 있지만,  
+다른 출처 서버에 있는 5000번 포트의 Nest 서버의 리소스는 상호작용이 불가능하다.
 
 ![CORS1](https://github.com/ChangSuLee00/CS-study/blob/main/pictures/CORS1.png?raw=true)
 
