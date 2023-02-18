@@ -34,6 +34,8 @@
 
 - [Cookie, Session, Token](https://github.com/ChangSuLee00/CS-study/blob/main/network/Cookie_Session_Token.md)
 
+- [CORS](https://github.com/ChangSuLee00/CS-study/blob/main/network/CORS.md)
+
 ---
 
 ## Database
