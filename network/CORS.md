@@ -36,19 +36,24 @@ React 서버의 Origin인 3000번 포트와 Nest서버의 Origin인 5000번 포�
 
 ![CORS2](https://github.com/ChangSuLee00/CS-study/blob/main/pictures/CORS2.png?raw=true)
 
-유저가 해커의 주소로 접속해 iframe을 통해 서버에 있는 메일에 관련된 document를 로드할 경우 브라우저는 메일 서버의 Origin과 해커의 서버의 Origin을 비교하여 CORS 오류 낸다.  
-스크립트 실행 과정에서 http/hacker.com의 document에서 server의 document를 참조할때 CORS오류를 내기 때문에 server의 document는 null값을 내보내고 해커는 정보를 얻을 수 없게 된다.
+유저가 해커의 주소로 접속해 iframe을 통해 서버에 있는 메일에 관련된 document를 로드할 경우  
+브라우저는 메일 서버의 Origin과 해커의 서버의 Origin을 비교하여 CORS 오류 낸다.  
+스크립트 실행 과정에서 http/hacker.com의 document에서 server의 document를 참조할때  
+CORS오류를 내기 때문에 server의 document는 null값을 내보내고 해커는 정보를 얻을 수 없게 된다.
 
 # CORS의 동작
 
 ## Preflight Request
 
-본 요청을 보내기 전에 브라우저 스스로 요청이 안전한지 확인하기 위해 보내는 예비 요청을 Preflight라고 한다. 이 예비 요청에는 HTTP 메서드 중 OPTIONS 메서드가 사용된다.
+본 요청을 보내기 전에 브라우저 스스로 요청이 안전한지 확인하기 위해 보내는 예비 요청을 Preflight라고 한다.  
+이 예비 요청에는 HTTP 메서드 중 OPTIONS 메서드가 사용된다.
 
 ![CORS_Preflight](https://github.com/ChangSuLee00/CS-study/blob/main/pictures/CORS_Preflight.png?raw=true)
 
-예비요청에서 브라우저는 Access-Control-Request-Method를 사용해서 본 요청에서 사용할 메서드를 알려주고, Access-Control-Request-Headers를 사용해서 본 요청에서 사용할 헤더를 알려준다.  
-서버는 헤더에 포함된 Access-Control-Allow-Origin으로 접근 가능한 출처를 알려주며 요청이 CORS 정책을 위반한다면 브라우저는 CORS 오류를 내보낸다.
+예비요청에서 브라우저는 Access-Control-Request-Method를 사용해서 본 요청에서 사용할 메서드를 알려주고,  
+Access-Control-Request-Headers를 사용해서 본 요청에서 사용할 헤더를 알려준다.  
+서버는 헤더에 포함된 Access-Control-Allow-Origin으로 접근 가능한 출처를 알려주며  
+요청이 CORS 정책을 위반한다면 브라우저는 CORS 오류를 내보낸다.
 
 Preflight Request는 CORS를 인식하지 못하는 서버가 잘못된 출처로 정보를 보내지 않도록 설계된 메커니즘이다.
 
@@ -62,10 +67,9 @@ Preflight Request는 CORS를 인식하지 못하는 서버가 잘못된 출처�
 ## Credential Reqeust
 
 인증 관련 헤더를 담을 수 있게 해주는 옵션이 credentials이다.  
-credentials의 기본값은 same-origin(같은 출처 간 요청에만 인증 정보를 담을 수 있음)이며,
+credentials의 기본값은 same-origin(같은 출처 간 요청에만 인증 정보를 담을 수 있음)이며,  
 쿠키나 토큰을 클라이언트에서 자동으로 담아서 보내고 싶을때 credentials를 include하면 서버까지 전달된다.  
-이때 서버에서도 Access-Control-Allow-Credentials를 true로 설정하고,  
-Access-Control-Allow-Origin에 허용할 출처를 적어야 한다(\*은 안된다).
+이때 서버에서도 Access-Control-Allow-Credentials를 true로 설정하고, Access-Control-Allow-Origin에 허용할 출처를 적어야 한다(\*은 안된다).
 
 # CORS의 해결 방안
 
@@ -77,7 +81,8 @@ Access-Control-Allow-Origin에 허용할 출처를 적어야 한다(\*은 안된
 
 ## Access-Control-Allow-Origin 세팅하기
 
-서버에서 Access-Control-Allow-Origin 헤더에 알맞는 출처를 명시 해준다면 CORS 정책을 통과하게 되어 문제가 해결된다.
+서버에서 Access-Control-Allow-Origin 헤더에 알맞는 출처를 명시 해준다면  
+CORS 정책을 통과하게 되어 문제가 해결된다.
 
 ---
 
