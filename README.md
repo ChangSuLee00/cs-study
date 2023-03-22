@@ -14,6 +14,8 @@
 
 - [Queue](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/queue.md)
 
+- [Graph](https://github.com/ChangSuLee00/CS-study/blob/main/data_structure/graph.md)
+
 ---
 
 ## Algorithm
