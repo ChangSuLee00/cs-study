@@ -52,6 +52,8 @@
 
 - [데이터베이스의 원리와 응용 1~8](https://hardworking-everyday.tistory.com/category/Computer_Science/Database)
 
+- [ACID 원칙이란?](https://github.com/cslee0034/CS-study/blob/main/database/ACID.md)
+
 ---
 ## ETC
 
