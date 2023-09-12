@@ -54,6 +54,8 @@
 
 - [ACID 원칙이란?](https://github.com/cslee0034/CS-study/blob/main/database/ACID.md)
 
+- [Isolation Level](https://github.com/cslee0034/CS-study/blob/main/database/isolation_level.md)
+
 ---
 ## ETC
 
