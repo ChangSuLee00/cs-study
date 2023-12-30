@@ -46,6 +46,8 @@
 
 - [CORS](https://github.com/ChangSuLee00/CS-study/blob/main/network/CORS.md)
 
+- [AWS SAA C03](https://github.com/cslee0034/computer_science_study/blob/main/network/AWS_SAA_C03.md)
+
 ---
 
 ## Database
@@ -57,6 +59,7 @@
 - [Isolation Level](https://github.com/cslee0034/CS-study/blob/main/database/isolation_level.md)
 
 ---
+
 ## ETC
 
 - [Git](https://github.com/ChangSuLee00/CS-study/blob/main/etc/git.md)
