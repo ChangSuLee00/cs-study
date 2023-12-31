@@ -231,3 +231,49 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 - 볼륨이 많아질 수록 필요한 대역폭이 늘어나기 때문에 인스턴스 네트워크 I/O 역폭을 확인해야 한다.
 
 - 사용중인 운영체제와 네트워크 드라이버가 다중 EBS를 지원하는지 확인해야 한다.
+
+---
+
+# EFS
+
+![EFS](../pictures/EFS.png)
+
+Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 managed network file system이다.
+
+- 다중 AZ의 EC2와 연결이 가능하다.
+
+- 가용성이 높고, 확장성이 높고, 가격이 비싸다.
+
+- Linux base AMI (POSIX)에서만 사용 가능하다.
+
+- 유휴 데이터(data at rest)는 KMS를 통해 암호화 된다.
+
+## EFS Storage Class
+
+- Standard: 자주 접근하는 파일용
+
+- Infrequent Access(IA): 파일을 검색하는데 비용이 발생하며, 저장 비용은 더 낮다 (90% 이상 절감 가능).
+
+## EBS vs EFS
+
+EBS:
+
+- 한 인스턴스에 부착 된다. (io1/io2 제외)
+
+- AZ에 고정.
+
+- 디스크 크기 증가 시 I/O증가.
+
+- Migration을 위해서 Snapshot 필요.
+
+- EC2 종료 시 안스턴스의 Root EBS도 종료된다.
+
+EFS:
+
+- 다중 AZ에 100여개의 인스턴스에 연결됨.
+
+- 웹사이트 파일을 공유한다. (워드프레스 등)
+
+- 리눅스 기반 이미지에서만 사용 가능.
+
+- EBS보다 비싸다.
