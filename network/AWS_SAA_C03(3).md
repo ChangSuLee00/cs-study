@@ -39,3 +39,55 @@ Relational Database Service의 약자로 AWS가 관리하는 관계형 데이터
 - downtime이 0이다. (DB를 멈출 필요가 없다)
 
 - 스냅샷이 생긴다 -> 다른 AZ에 스냅샷을 복구한다 -> 동기화가 이루어진다.
+
+## RDS Proxy
+
+완전 관리형 데이터베이스 프록시이다.
+
+- app이 connection을 공유하도록 한다.
+
+- database 자원을 덜 소모하게 만들어 효율성을 늘리고 부하를 줄인다.
+
+- RDS와 Aurora의 장애 극복 시간을 66% 까지 줄일 수 있다.
+
+- DB에 IAM인증을 강제한다.
+
+- RDS Proxy는 공개적으로 접근할 수 없다.
+
+# Aurora
+
+![Aurora](../pictures/Aurora.png)
+
+AWS의 독점 기술로, 클라우드에 최적화된 RDB의 일종이다.
+
+- Postgres 및 MySQL을 지원한다.
+
+- RDS의 MySQL보다 5배, Postgres보다 3배 이상 향상된 성능을 제공한다.
+
+- Aurora 스토리지는 10GB 단위로 최대 128TB까지 자동으로 증가한다.
+
+- 즉각적 장애 극복 조치를 지원한다 (30초 이내로 장애 극복).
+
+- RDB보다 20% 가량 비용이 더 높다.
+
+- master와 최대 15개의 읽기 전용 복제본을 생성 가능하다.
+
+- Cross Region 복제를 지원한다.
+
+## Aurora Replicas
+
+- Write Endpoint와 ReadEndpoint를 통해 읽기와 쓰기를 수행하며, 자동으로 스케일링 된다.
+
+- Custom Endpoints를 통해 특정 Aurora instance들로 접근을 유도할 수 있다.
+
+## Aurora Serverless
+
+- 실제 사용량을 기반으로 자동으로 확장된다.
+
+- 간헐적 워크로드에 적합하다.
+
+## Global Aurora
+
+- 기본 지역 1개와 보조 지역 5개를 선택할 수 있고, 보조 지역당 읽기 복제본 최대 16개를 가질 수 있다.
+
+- 재해 복구를 위해 사용된다.
