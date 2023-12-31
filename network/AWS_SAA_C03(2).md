@@ -121,3 +121,15 @@ VPC끼리의 통신에 사용된다.
 로드 밸런서가 특정 인스턴스로의 새로운 요청을 중단하는 동시에, 해당 인스턴스에서 이미 처리 중인 요청을 정상적으로 완료할 수 있도록 일정 시간을 부여하는 기능이다.
 
 - ALB와 NLB에서는 이와 유사한 기능을 하는 Deregistration Delay가 있다.
+
+# ASG
+
+![ASG](../pictures/ASG.png)
+
+Auto Scaling Group의 약자로 수요에 따라 자동으로 인스턴스를 추가, 제거하는 서비스.
+
+- Launch Template: 미리 정의된 생성될 EC2에 대한 데이터로 AMI, 인스턴스 타입, EBS, SSH Keypair 등이 있다.
+
+- Predictive Scaling: 예측을 통해 부하를 예상하고 스케일링을 한다.
+
+- Scaling Cooldowns: 스케일링 활동을 한 이후 추가적인 launching을 하지 않는 기간.
