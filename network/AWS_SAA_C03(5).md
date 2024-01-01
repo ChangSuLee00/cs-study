@@ -4,7 +4,7 @@
 
 ![SQS](../pictures/SQS.png)
 
-디커플링을 위한 완전 관리형 서비스.
+디커플링을 위한 완전 관리형 분산 메시지 큐 서비스.
 
 - Producer와 Comsumer 사이의 Buffer 역할을 한다.
 
@@ -65,3 +65,21 @@ Consuming
 - Batch로 메시지를 보내거나 받을 때 초당 300개의 메시지를 보내거나 받을 수 있다.
 
 - Batch: 여러 개의 작업을 모아서 한 번에 처리하는 것으로, SQS에서는 여러 개의 메시지를 모아서 한번에 SQS 대기열로 보내거나 받는 작업이다.
+
+# SNS
+
+![SNS](../pictures/SNS.png)
+
+푸시 알림, 이메일, SMS, HTTPS 등 다양한 메시지를 전송하는 완전관리형 알림 서비스.
+
+Event Producing
+
+- 메시지를 SQS 대기열로 직접 보낼 수 있다.
+
+- Lambda에 데이터를 보내 처리할 수 있다.
+
+- Kinesis Data Firehose로 데이터를 보내 S3나 Redshift로 보낼 수 있다.
+
+Event Recieve
+
+- CouldWatch, AWS Budget, ASG, CloudFormation, S3, RDS Event, Lambda 등에서 지정된 SNS 주제로 알림을 보낼 수 있다.
