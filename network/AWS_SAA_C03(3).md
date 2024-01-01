@@ -266,3 +266,13 @@ server-side filtering과 SQL을 통해 보다 적은 데이터를 가져온다.
 ## Batch Operations
 
 단일 요청으로 S3객체에 대한 대량 작업을 수행한다. 암호화 되지 않은 객체를 암호화 할 수 있다.
+
+# Snow Family
+
+![Snowcone](../pictures/Snowcone.png)
+
+AWS Snow Family는 물리적인 데이터 전송 솔루션의 모음이다.
+
+## DataSync
+
+AWS DataSync는 온프레미스 데이터 스토리지와 AWS 클라우드 스토리지 서비스 간에 데이터를 빠르고 간편하게 온라인으로 전송할 수 있는 데이터 전송 서비스이다.
