@@ -40,6 +40,20 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 - AWS 서비스를 위한 user role을 생성한다.
 
+## IAM Group vs Organization
+
+- AWS Organization은 AWS 계정을 생성하고, 그룹화(OU, Organizational Unit)하고, 정책(SCP, Service Control Policy)을 적용할 수 있다.
+
+- 반면 IAM은 리소스에 대한 접근을 제어할수 있고, 사용자 및 그룹에 대한 생성, 접근 허용, 접근 거부 등을 설정할 수 있다.
+
+- Organization은 AWS 계정을 대상으로 하지만, IAM은 사용자를 대상으로 한다.
+
+- Organizations의 정책이 IAM의 정책보다 우선한다.
+
+- 출처: [AWS Organizations, IAM 비교](https://ltlkodae.tistory.com/22)
+
+- AWS Organizations는 계정 관리와 조직 전체 정책을 다루는 중앙 관리 서비스(대규모 기업에 적합)이며, IAM은 개별 사용자와 그룹의 권한 관리를 위한 서비스이다.
+
 ---
 
 # EC2
