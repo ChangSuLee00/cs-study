@@ -54,6 +54,14 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 - AWS Organizations는 계정 관리와 조직 전체 정책을 다루는 중앙 관리 서비스(대규모 기업에 적합)이며, IAM은 개별 사용자와 그룹의 권한 관리를 위한 서비스이다.
 
+## Cross Account Access
+
+한 AWS 계정의 사용자가 다른 AWS 계정의 리소스에 액세스할 수 있도록 허용하는 기능이다.
+
+- 리소스 소유자 계정에서 IAM 역할을 생성하고, 신뢰 정책(Trust Policy)을 설정하여다른 계정의 사용자가 이 역할을 맡을 수 있도록 허용한다.
+
+- 액세스 요청자 계정의 사용자는 AWS STS(Security Token Service)를 통해 교차 계정 역할을 맡는다.
+
 ---
 
 # EC2
