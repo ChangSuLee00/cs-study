@@ -168,6 +168,8 @@ JSON 기반의 S3 정책이다.
 
 - Principal: 정책을 적용할 계정 또는 사용자
 
+:: Resource의 Action을 Principal에게 Effect(Allow/Deny)한다
+
 ```JSON
 {
   "Version": "2012-10-17",
@@ -186,3 +188,45 @@ JSON 기반의 S3 정책이다.
   ]
 }
 ```
+
+## S3 Standard – General Purpose
+
+- 99.99% 가용성: 자주 접근되는 데이터를 위한 고성능 스토리지.
+- 용도: 빅 데이터 분석, 모바일 및 게임 어플리케이션, 콘텐츠 배포 등.
+- 특징: 낮은 지연 시간과 높은 처리량, 2개 시설의 동시적 장애를 견딜 수 있음.
+
+## S3 Infrequent Access (IA)
+
+1. S3 Standard-IA:
+
+   - 99.9% 가용성: 비교적 자주 접근되지 않지만, 필요할 때 빠른 접근이 필요한 데이터용.
+
+   - 비용: S3 Standard보다 낮음.
+
+   - 용도: 재해 복구, 백업 등.
+
+2. S3 One Zone-IA:
+
+   - 단일 AZ에서 99.999999999% 내구성: 데이터는 하나의 가용 영역에 저장되며, 그 영역이 파괴되면 데이터가 손실될 수 있음.
+
+   - 99.5% 가용성: 보조 백업 복사본 저장 또는 재생성 가능한 데이터 저장용.
+
+## S3 Glacier Storage
+
+저비용 보관/백업용 객체 스토리지.
+
+- S3 Glacier Instant Retrieval: 분기별로 한 번 접근하는 데이터용, 밀리초 내 검색 가능.
+
+- S3 Glacier Flexible Retrieval (구 S3 Glacier): 요청이 완료되는 시간에 따른 다양한 검색 옵션 제공.
+
+- S3 Glacier Deep Archive: 장기 보관용, 12시간 또는 48시간 검색 옵션.
+
+## S3 Intelligent-Tiering
+
+- 자동 계층 이동: 사용량에 따라 객체를 자동으로 다른 액세스 계층으로 이동.
+
+- 비용: 작은 월별 모니터링 및 자동 계층 이동 비용이 든다.
+
+- 검색 비용 없음
+
+- Frequent Access tier -> Infrequent Access tier -> Archive Instant Access tier -> Archive Access tier -> Deep Archive Access tier
