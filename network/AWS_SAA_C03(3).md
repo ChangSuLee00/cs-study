@@ -273,6 +273,48 @@ server-side filtering과 SQL을 통해 보다 적은 데이터를 가져온다.
 
 AWS Snow Family는 물리적인 데이터 전송 솔루션의 모음이다.
 
-## DataSync
+# FSx
 
-AWS DataSync는 온프레미스 데이터 스토리지와 AWS 클라우드 스토리지 서비스 간에 데이터를 빠르고 간편하게 온라인으로 전송할 수 있는 데이터 전송 서비스이다.
+![FSx](../pictures/FSx.png)
+
+AWS가 제공하는 완전 관리형 파일 스토리지 서비스로, Windows 파일 서버와 Lustre 파일 시스템을 지원한다.
+
+## FSx for Windows
+
+완전 관리형 Windows 기반 파일 스토리지 서비스로, Microsoft Windows 서버의 네이티브 호환성과 기능을 제공한다.
+
+## FSx for Lustre
+
+완전 관리형 파일 시스템으로, 고성능 컴퓨팅 워크로드에 최적화 되어 있으다. 빠른 데이터 처리와 대규모 스토리지 작업을 지원한다.
+
+## Storage Gateway
+
+![Storage_Gateway](../pictures/Storage_Gateway.png)
+
+on-premises data와 cloud data 사이의 가교 역할을 하는 서비스.
+
+구성된 S3 버킷은 NFS와 SMB protocol을 사용하여 액세스 할 수 있다.
+
+# Transfer Family
+
+![Transfer_Family](../pictures/Transfer_Family.png)
+
+FTP 프로토콜을 사용하여 Amazon S3 또는 Amazon EFS와의 파일 전송을 위한 완전 관리형 서비스.
+
+- FTP 프로토콜 지원
+
+- FTPS 프로토콜 지원 (File Transfer Protocol over SSL)
+
+- SFTP 프로토콜 지원 (Secure File Transfer Protocol)
+
+# DataSync
+
+![DataSync](../pictures/DataSync.png)
+
+온프레미스 데이터 스토리지 및 기타 클라우드, AWS에서 AWS 클라우드로 데이터를 온라인으로 전송할 수 있는 서비스.
+
+- S3, EFS, FSx로 동기화 가능.
+
+- 복제 작업 cron 가능.
+
+- 파일 권한 및 메타데이터가 보존된다.
