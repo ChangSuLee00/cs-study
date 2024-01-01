@@ -230,3 +230,29 @@ JSON 기반의 S3 정책이다.
 - 검색 비용 없음
 
 - Frequent Access tier -> Infrequent Access tier -> Archive Instant Access tier -> Archive Access tier -> Deep Archive Access tier
+
+## Performance
+
+### S3 basics
+
+- S3는 요청량이 많아지면 자동으로 확장하며, 100 ~ 200ms의 지연 시간을 갖는다.
+
+- 버킷의 접두사 마다 초당 3500 ~ 5500개의 요청을 처리할 수 있다.
+
+### Multi-Part Upload
+
+- 업로드를 여러 부분으로 나눠 동시에 전송한다.
+
+- 100MB 이상의 파일에 권장되며, 5GB 이상의 파일에는 필수적으로 사용해야 한다.
+
+### Transfer Acceleration
+
+- 파일을 AWS Edge Location으로 전송하고, 이 위치에서 데이터를 대상 지역의 S3 버킷으로 전달하여 전송 속도를 증가시킨다.
+
+- 가장 가까운 Public 인터넷을 통해 Edge Location으로 전송하고 그 뒤 더 빠른 AWS 전용선으로 S3에 업로드 한다.
+
+- Multi-Part Upload와 함께 사용할 수 있다.
+
+## Byte-Range Fetches
+
+GET 요청을 병렬화 하여 특정 범위의 바이트만 가져온다.
