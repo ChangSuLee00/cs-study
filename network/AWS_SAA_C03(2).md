@@ -1,3 +1,5 @@
+# AWS SAA C03 / High Availability & Scalability
+
 # Scalability vs Availability
 
 확장성(Scalability): 어플리케이션이나 시스템이 늘어나는 부하, 사용자 수, 또는 데이터양을 효율적으로 처리할 수 있는 능력.
@@ -6,7 +8,7 @@
 
 - 수평적 확장(Scaling Out): 더 많은 노드를 추가하여 처리 능력을 분산시키는 방법.
 
-가용성(Availability): 시스템이 필요할 때 사용할 수 있는 정도.
+가용성 (Availability): 시스템이 필요할 때 사용할 수 있는 정도.
 
 - 장애 복구 계획, 지역 분산, 중복 구축 등을 이용할 수 있다.
 
