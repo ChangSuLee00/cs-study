@@ -256,3 +256,11 @@ JSON 기반의 S3 정책이다.
 ## Byte-Range Fetches
 
 GET 요청을 병렬화 하여 특정 범위의 바이트만 가져온다.
+
+## S3 Select
+
+server-side filtering과 SQL을 통해 보다 적은 데이터를 가져온다.
+
+## Batch Operations
+
+단일 요청으로 S3객체에 대한 대량 작업을 수행한다. 암호화 되지 않은 객체를 암호화 할 수 있다.
