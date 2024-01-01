@@ -168,7 +168,7 @@ JSON 기반의 S3 정책이다.
 
 - Principal: 정책을 적용할 계정 또는 사용자
 
-:: Resource의 Action을 Principal에게 Effect(Allow/Deny)한다
+:: Principal이 Resource의 Action을 하는 것을 Effect(Allow/Deny)한다.
 
 ```JSON
 {
