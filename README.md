@@ -50,6 +50,10 @@
 
 - [AWS SAA C03(2)](<https://github.com/cslee0034/computer_science_study/blob/main/network/AWS_SAA_C03(2).md>)
 
+- [AWS SAA C03(3)](<https://github.com/cslee0034/computer_science_study/blob/main/network/AWS_SAA_C03(3).md>)
+ 
+- [AWS SAA C03(4)](<https://github.com/cslee0034/computer_science_study/blob/main/network/AWS_SAA_C03(4).md>)
+
 ---
 
 ## Database
