@@ -83,3 +83,49 @@ Event Producing
 Event Recieve
 
 - CouldWatch, AWS Budget, ASG, CloudFormation, S3, RDS Event, Lambda 등에서 지정된 SNS 주제로 알림을 보낼 수 있다.
+
+# Kinesis
+
+로그, 지표, IoT 데이터 등을 실시간으로 스트리밍하여 데이터 수집, 처리, 분석하는 도구.
+
+## Kinesis Data Streams
+
+![Kinesis_Data_Streams](../pictures/Kinesis_Data_Streams.png)
+
+시스템에서 빅데이터를 스트림을 다루는 서비스.
+
+- 1샤드 = 1MB/sec or 1000 msg/sec ⇒ 샤드가 많을 수록 빠른처리 가능
+
+- Stream으로 구성되어 있고 1개의 Stream에는 여러개의 샤드가 있다.
+
+- Kinesis로 Record가 전달 되는데 Record는 어떤 Shard로 분배될지를 정하는 Partition Key와 값인 Data Blob으로 구성된다.
+
+## Kinesis Data Firehose
+
+![Kinesis_Data_Firehose](../pictures/Kinesis_Data_Firehose.png)
+
+거의 모든 Data Producer에서 데이터를 가져올 수 있는 완전 관리 서비스.
+
+- Lambda를 이용해서 데이터를 가공할 수 있다.
+
+- 완전 관리 서비스로 데이터를 쓰는 코드를 작성할 필요가 없다.
+
+- Destination으로는 다음이 있다.
+
+  - AWS Destination: S3, Redshift, OpenSearch.
+
+  - 3rd-party Partner Destination: Datadog, New Relic, MongoDB ...
+
+  - Custom Destination: HTTP Endpoint
+
+- 데이터가 지나간 만큼 비용 지불.
+
+- '거의' 실시간임. (near real-time)
+
+- 데이터 저장소가 없어 replay가 불가능하다.
+
+## Kinesis Data Analytics
+
+![Kinesis_Data_Analytics](../pictures/Kinesis_Data_Analytics.png)
+
+스트리밍 데이터를 분석하는 데 사용되는 완전 관리형 서비스.
