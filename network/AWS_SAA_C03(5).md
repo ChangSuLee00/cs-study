@@ -100,6 +100,8 @@ Event Recieve
 
 - Kinesis로 Record가 전달 되는데 Record는 어떤 Shard로 분배될지를 정하는 Partition Key와 값인 Data Blob으로 구성된다.
 
+- 데이터가 들어오면 삭제가 불가능하다.
+
 ## Kinesis Data Firehose
 
 ![Kinesis_Data_Firehose](../pictures/Kinesis_Data_Firehose.png)
