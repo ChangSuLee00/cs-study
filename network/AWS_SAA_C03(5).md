@@ -134,6 +134,8 @@ Event Recieve
 
 # Amazon MQ
 
+![Amazaon_MQ](../pictures/Amazaon_MQ.png)
+
 Rabbit MQ, Active MQ의 관리형 메시지 브로커 서비스.
 
 - 다중 AZ에서 실행 가능하다.
