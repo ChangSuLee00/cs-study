@@ -14,7 +14,7 @@
 
 # ELB
 
-![ELB](./pictures/ELB.png)
+![ELB](../pictures/AWS/ELB.png)
 
 Elastic Load Balancer의 약자로 AWS에서 제공하는 로드 밸런싱 서비스.
 
@@ -128,7 +128,7 @@ VPC끼리의 통신에 사용된다.
 
 # ASG
 
-![ASG](./pictures/ASG.png)
+![ASG](../pictures/AWS/ASG.png)
 
 Auto Scaling Group의 약자로 수요에 따라 자동으로 인스턴스를 추가, 제거하는 서비스.
 
