@@ -2,7 +2,7 @@
 
 # IAM
 
-![IAM](./pictures/AWS/IAM.png)
+![IAM](../pictures/AWS/IAM.png)
 
 IAM이란 Identity and Access Management의 약자로 AWS 리소스를 제어하는 권한을 중앙에서 관리할 수 있도록 도와주는 '글로벌' 서비스이다.
 
@@ -73,7 +73,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 # Organizations
 
-![Organizations](./pictures/Organizations.png)
+![Organizations](../pictures/AWS/Organizations.png)
 
 - 글로벌 서비스.
 
@@ -121,7 +121,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 # Cognito
 
-![Cognito](./pictures/Cognito.png)
+![Cognito](../pictures/AWS/Cognito.png)
 
 사용자에게 웹 또는 모바일 앱과 상호작용할 수 있는 ID를 제공하는 서비스.
 
@@ -141,7 +141,7 @@ Multi Factor Authentication의 약자로, password와 security device를 조합�
 
 # EC2
 
-![EC2](./pictures/EC2.png)
+![EC2](../pictures/AWS/EC2.png)
 
 EC2란 Elastic Compute Cloud의 약자로, 컴퓨팅 리소스를 대여하는 AWS의 서비스이다.
 
@@ -291,7 +291,7 @@ EBS는 네트워크 장치이기 때문에, 고성능 하드웨어 디스크가 
 
 # EBS
 
-![EBS](./pictures/EBS.png)
+![EBS](../pictures/AWS/EBS.png)
 
 Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워크 UBS 스틱과 유사).
 
@@ -351,7 +351,7 @@ Elastic Block Storage는 EC2에 붙이는 '네트워크' 장치이다 (네트워
 
 # EFS
 
-![EFS](./pictures/EFS.png)
+![EFS](../pictures/AWS/EFS.png)
 
 Elastic File System의 약자로 여러 개의 EC2에 mount할 수 있는 managed network file system이다.
 
