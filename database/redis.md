@@ -6,7 +6,7 @@ Redis는 Remote Dictionary Server의 약자로 모든 데이터를 메모리에 
 
 Redis는 다음과 같이 내부적인 구현이 되어 있다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a172a5ce-2683-486f-aeff-d6575cad960c/e962e33a-1baf-45fc-be0d-38b25774f93d/Untitled.png)
+![redis](https://github.com/cslee0034/computer_science_study/blob/main/pictures/redis.png?raw=true)
 
 Redis는 오픈소스이기 때문에 코드를 보면서 각각의 실제 구현을 확인할 수 있다.
 
@@ -28,7 +28,7 @@ typedef struct dictEntry {
 
 dictType은 해시 테이블의 동작을 정의하는 함수를 정의하고, 다양한 데이터 구조를 지원한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a172a5ce-2683-486f-aeff-d6575cad960c/f7703d73-c930-4e11-8745-7affb0281079/Untitled.png)
+![redis_hash](https://github.com/cslee0034/computer_science_study/blob/main/pictures/redis_hash.png?raw=true)
 
 ```jsx
 // redis/deps/hiredis/dict.h
@@ -77,7 +77,7 @@ dictType은 해시 함수와 데이터 구조를 정의하며,
 
 dictEntity는 key-value를 저장한다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/a172a5ce-2683-486f-aeff-d6575cad960c/9aaf8579-0c68-4415-866e-c673076db28b/Untitled.png)
+![redis_dict](https://github.com/cslee0034/computer_science_study/blob/main/pictures/redis_dict.png?raw=true)
 
 ```jsx
 // redis/deps/hiredis/dict.h
